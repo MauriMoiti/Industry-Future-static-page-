@@ -264,6 +264,9 @@
 
 
 /*footer-end*/
+.mobile-none-640 {
+    display: none;
+}
 .container-footer-end {
     flex-direction: column;
 }
@@ -286,10 +289,7 @@
     padding: 20px 0px 20px 0px;
     gap: 6px;
 }
-.container-content-footer-end-first li a{
-    
-    
-}
+
 
 .container-iframe-footer {
     display: flex;
