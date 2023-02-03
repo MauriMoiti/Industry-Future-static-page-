@@ -262,7 +262,6 @@ body {
 }
 .css-p-article {
     font-size: var(--size-lg2);
-    font-family: cursive;
     text-align: center;
     padding: 0px 10px 0px 10px;
 }
