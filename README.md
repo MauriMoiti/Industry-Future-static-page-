@@ -5,7 +5,7 @@ Fundamentos Developer Web
 	
  Segun la documentación oficial de W3schools
 
-La etiqueta <footer> perteneciente a la estructura Hyper Text Markup Language (HTML) contiene la siguiente definición y maneras de uso:
+La etiqueta "<footer>" perteneciente a la estructura Hyper Text Markup Language (HTML) contiene la siguiente definición y maneras de uso:
 
  - La <footer> etiqueta define un pie de página para un documento o sección.
 
