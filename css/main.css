@@ -393,7 +393,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    place-content: center;  
+    place-content: center;
 }
 .css-submit-form {
     height: 30px;
