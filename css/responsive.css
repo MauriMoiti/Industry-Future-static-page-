@@ -229,7 +229,6 @@
 }
 .css-figcaption-aside {
     color: var(--color-gray-p);
-    font-family: cursive;
     font-weight: 500;
 }
 .css-li-aside-first_child{
@@ -269,36 +268,29 @@
     flex-direction: column;
 }
 .container-ul-footer {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
 }
 .container-map-footer {
-    justify-self: center;
-    grid-column: 1/4;
-    grid-row: 1/2;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    justify-content: center;
 }
+
 .container-content-footer-end {
     margin: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+    gap: 6px;
 }
-.container-content-footer-end-first {
-    grid-column: 1/2;
-    grid-row: 2/3;
+.container-content-footer-end-first li a{
+    
+    
 }
-.container-content-footer-end-second {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.container-content-footer-end-penultimate {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin: 20px 0px 20px 0px;
-}
-.container-content-footer-end-last {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin: 20px 0px 20px 0px;  
-}
+
 .container-iframe-footer {
     display: flex;
     place-content: center;
