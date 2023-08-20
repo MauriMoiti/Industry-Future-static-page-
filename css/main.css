@@ -61,6 +61,7 @@ body {
 .container-search {
     display: flex;
     align-items: center; 
+    gap: 20px;
 }
 .container-button-login {
     height: auto;
@@ -112,7 +113,7 @@ body {
 
 /* Empieza el css del NAV*/
 
-.container-nav {
+.container-nav-content  {
     width: 100%;
     height: auto;
     display: grid;
@@ -129,16 +130,16 @@ body {
 .container-ul-nav-header {
     display: flex;
 }
-.container-ul-nav-header > div li {
+.container-ul-nav-header > li {
     padding: 20px;
 }
-.container-ul-nav-header > div li a {
+.container-ul-nav-header > li a {
     
     text-decoration: none;
     font-size: var(--size-extra-lg);
     color: var(--color-blue_violet);
 }
-.container-ul-nav-header > div li a:hover {
+.container-ul-nav-header > li a:hover {
     
     color: var(--header-hover);
 }
