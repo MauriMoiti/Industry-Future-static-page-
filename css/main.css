@@ -155,14 +155,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 .css-h2-section {
     width: 400px;
     text-align: center;
     font-size: 32px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-
-    border: 1px solid var(--color-gray_smooth);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
     border-radius: 8px;
     padding: 10px;
     color: var(--color-violet_smooth);
@@ -243,8 +243,6 @@ body {
     text-align: center;
     padding: 0px 10px 0px 10px;
 }
-
-
 
 /*Comienza el aside*/
 .container-aside {
