@@ -188,11 +188,9 @@
     color: var(--color-gray-p);
     font-weight: 500;
 }
-.css-li-aside-first_child{
-    margin-top: 20px;
-}
-.css-li-aside-last_child {
-    margin-bottom: 10px;
+
+.css-ul-article {
+    margin: 20px 0px;
 }
 
 .css-ul-article li {

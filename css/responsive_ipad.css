@@ -30,8 +30,7 @@
     font-size: var(--size-lg2);
 }
 .css-p-title {
-    font-size: 10px;
-    text-align: start;
+    font-size: 12px;
     align-self: flex-end;
 }
 .css-form-search {
@@ -42,18 +41,18 @@
     margin-right: 12px;
 }
 .css-img-login {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     padding: 0px;
 }
 .css-p-login-button {
-    font-size: var(--size-sm);
+    font-size: 11px;
     
 }
 .css-button-select_country {
     height: 25px;
     width: auto;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 /*header*7 /*nav*/
@@ -64,15 +63,10 @@
     padding: 5px;
 }
 
-.container-ul-nav-header > div li {
-    padding: 0px; 
-}
-.container-ul-nav-header > div li a {
-    font-size: 12px; 
+.container-ul-nav-header > li a {
+    font-size: 15px; 
     
 }
-
-
 
 /*Sections*/
 .mobile-none {
@@ -232,11 +226,8 @@
     font-family: cursive;
     font-weight: 500;
 }
-.css-li-aside-first_child{
-    margin-top: 20px;
-}
-.css-li-aside-last_child {
-    margin-bottom: 10px;
+.css-ul-article {
+    margin: 20px 0px;
 }
 .css-ul-article li {
     color: black;
@@ -310,12 +301,12 @@
 .container-content-footer-end-penultimate {
     grid-column: 3/4;
     grid-row: 2/3;
-    margin: 20px 0px 20px 0px;
+    margin: 0px;
 }
 .container-content-footer-end-last {
     grid-column: 4/5;
     grid-row: 2/3;
-    margin: 20px 0px 20px 0px;  
+    margin: 0px;  
 }
 .container-iframe-footer {
     height: 270px;
