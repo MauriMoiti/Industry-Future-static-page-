@@ -99,16 +99,19 @@ body {
     width: 13px;
     height: 13px;   
 }
-.css-button-select_country {
+
+#css-button-select_country {
     cursor: pointer;
-    height: 30px;
+    height: auto;
+    width: auto;
+    padding: 3px;
     border: 1px solid;
     color: var(--color-gray_smooth);
     background-color: white;
     border-radius: 8px;
     margin-right: 10px;
 }
-.css-button-select_country:hover {
+#css-button-select_country:hover {
     border-color: var(--color-gray_smooth);
     color: var(--color-blue_violet);
 }
