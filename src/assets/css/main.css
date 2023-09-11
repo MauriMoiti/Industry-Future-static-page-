@@ -180,7 +180,7 @@ body {
     gap: 10px;
     background-color: rgb(223, 223, 223);
 }
-.container-main > section {
+.container-main > .section-home {
     background-color: #c6d4e1;
     padding: 20px;
     border-radius: 12px;
@@ -189,7 +189,7 @@ body {
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
-.container-main section > div  {
+.container-main .section-home > div  {
     width: 100%;
     padding: 0px;
     display: flex; 
@@ -200,11 +200,11 @@ body {
     word-wrap:break-word;
     gap: 30px;
 }
-.container-main section > div > img {
+.container-main .section-home > div > img {
     height: 400px;
     width: 70%;
 }
-.container-main section > div > p {
+.container-main .section-home > div > p {
     color: black;
     font-size: var(--size-lg2);
     
