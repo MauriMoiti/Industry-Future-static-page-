@@ -1,0 +1,10 @@
+.section-applications {
+    & .container-info-applications {
+        & .container-info {
+            margin: 30px 0;
+            font-size: 18px;
+            line-height: 27px;
+            word-wrap: break-word;
+        }
+    }
+}

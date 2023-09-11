@@ -1,46 +1,40 @@
-import { home, hideHome } from "../src/components/home/home.js"
+import { hideContent } from "../src/components/hideContent/hideContent.js"
 import { aboutUs } from "../src/components/about-us/about-us.js";
 import { applications } from "../src/components/applications/applications.js";
 import { technology } from "../src/components/technology/technology.js";
 import { sustainability } from "../src/components/sustainability/sustainability.js";
 
 // load for default
-home()
+hideContent();
+applications();
 
 $(function () {
 
     //Handleclick in navbar 
-    const firstMenuItem = $("[data-index='1']"); // home
+    const firstMenuItem = $("[data-index='1']"); // applications
     const secondMenuItem = $("[data-index='2']"); // about-us 
-    const thirdMenuItem = $("[data-index='3']"); // applications
-    const fourthMenuItem = $("[data-index='4']"); // technology
-    const fifthMenuItem  = $("[data-index='5']"); // sustainability
+    const thirdMenuItem = $("[data-index='3']"); // technology
+    const fourthMenuItem = $("[data-index='4']"); // sustainability
+
     
         $(firstMenuItem).on("click", function(event) {
             event.preventDefault();
-            home();
+            hideContent()
+            applications();
         });
         $(secondMenuItem).on("click", function(event) {
             event.preventDefault();
-            hideHome();
+            hideContent();
             aboutUs();
         });
         $(thirdMenuItem).on("click", function(event) {
             event.preventDefault();
-            hideHome()
-            applications();  
+            hideContent();
+            technology();
         });
         $(fourthMenuItem).on("click", function(event) {
             event.preventDefault();
-            hideHome();
-            technology();  
-
-        });
-        $(fifthMenuItem).on("click", function(event) {
-            event.preventDefault();
-            hideHome();
-            sustainability();
+            hideContent();
+            sustainability();  
         });
 })
-
-// .on("click", fn). Instead of .click() use .trigger("click").
