@@ -1,12 +1,18 @@
+import './styles.js'
+
+import { header} from '../src/components/header/header.js';
+import { footer } from '../src/components/footer/footer.js';
 import { hideContent } from "../src/components/hideContent/hideContent.js"
-import { aboutUs } from "../src/components/about-us/about-us.js";
 import { applications } from "../src/components/applications/applications.js";
+import { aboutUs } from "../src/components/about-us/about-us.js";
 import { technology } from "../src/components/technology/technology.js";
 import { sustainability } from "../src/components/sustainability/sustainability.js";
 
 // load for default
+header();
 hideContent();
 applications();
+footer();
 
 $(function () {
 
@@ -23,6 +29,7 @@ $(function () {
             applications();
         });
         $(secondMenuItem).on("click", function(event) {
+            console.log(true)
             event.preventDefault();
             hideContent();
             aboutUs();

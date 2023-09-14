@@ -1,3 +1,8 @@
+/* responsive_ipad.css */
+@media screen and (max-width: 640px) {
+    /* Todo tu CSS para este media query aquí */
+
+
 :root {
 
     --color-blue_violet: #142EAE;
@@ -271,3 +276,4 @@
     margin: 0px 0px 20px 0px;
 }
 
+}

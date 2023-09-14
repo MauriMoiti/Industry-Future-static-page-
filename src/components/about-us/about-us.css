@@ -1,5 +1,5 @@
-main { 
-    & .section-about-us {
-    margin-bottom: ;
-    }
+.section-about-us {
+    width: auto;
+    height: auto;
+    display: flex;
 }
