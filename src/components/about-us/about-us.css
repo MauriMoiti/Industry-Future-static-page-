@@ -1,12 +1,12 @@
-
 .section-aboutUs {
     padding: 20px;
     width: auto;
     height: auto;
-    display: grid;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     text-align: left;
     word-wrap: break-word;
     line-height: 27px;
@@ -18,23 +18,27 @@
     -ms-transition: transfrom 0.5s;
     -o-transition: transfrom 0.5s;
     & .container-info {
+        width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 10px;
         padding: 15px 30px;
-        border: 1px solid black;
-        align-items: center;
+        border: 1px solid #70acbe;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
         background-color: #c6d4e1;
         &:hover {
-            transform: scale(1.02);
-            -webkit-transform: scale(1.02);
-            -moz-transform: scale(1.02);
-            -ms-transform: scale(1.02);
-            -o-transform: scale(1.02);
             opacity: 0.9;
             border-color: gray;
-}
+        }
+        & .text-aboutUs {
+            margin:0px;
+        }
         & h1 {
             display: flex;
             justify-content: center;
@@ -50,11 +54,19 @@
             color: #054f93;
         }
     }
-    & .container-ourVision{
-        border-top: none;
-        border-bottom: none;
+    & .container-aboutUs {
         &:hover {
-            border: 1px solid gray;
+            border-color: rgb(218, 254, 255);
+        }
+    }
+    & .container-ourVision{
+        &:hover {
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            -o-transform: scale(1.02);
+            opacity: 0.9;
         }
     }
     & .container-ourMission {
@@ -72,6 +84,14 @@
             & .text-li-ourMission {
                 margin: 0px 0px 0px 5px;
             }
+        }
+        &:hover {
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            -o-transform: scale(1.02);
+            opacity: 0.9;
         }
     }
 }

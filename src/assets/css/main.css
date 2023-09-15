@@ -29,7 +29,7 @@ body {
     width: 100%;
     height: auto;
     background-color: rgb(223, 223, 223);
-    padding: 20px 0px;
+    margin-top: 20px;
 }
 
 .container-main-header{
@@ -319,7 +319,6 @@ body {
     align-items: center;
     background-color: var(--color-gray_medium);
 
-    margin: 60px 0px 0px 0px;
 }
 
 
