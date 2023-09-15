@@ -41,7 +41,7 @@
             animation: pulsate 2s infinite;
             border-color: rgba(173, 216, 230);
             & h1 {
-                color: rgb(105, 132, 141);
+                color: rgb(0, 106, 141);
             }
         }
         & .title-technology {
@@ -53,11 +53,11 @@
             min-height: 184px;
             width: 70%;
             background-color: transparent;
-            border-radius: 12px;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
-            -ms-border-radius: 12px;
-            -o-border-radius: 12px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
 }
         & .container-text-info-technology {
             width: 80%;
