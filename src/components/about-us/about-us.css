@@ -1,5 +1,77 @@
-.section-about-us {
+
+.section-aboutUs {
+    padding: 20px;
     width: auto;
     height: auto;
-    display: flex;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 27px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: transfrom 0.5s;
+    -webkit-transition: transfrom 0.5s;
+    -moz-transition: transfrom 0.5s;
+    -ms-transition: transfrom 0.5s;
+    -o-transition: transfrom 0.5s;
+    & .container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px 30px;
+        border: 1px solid black;
+        align-items: center;
+        background-color: #c6d4e1;
+        &:hover {
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            -o-transform: scale(1.02);
+            opacity: 0.9;
+            border-color: gray;
+}
+        & h1 {
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            margin: 5px;
+            color: #054f93;
+        }
+        & h2 {
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+            margin: 5px;
+            color: #054f93;
+        }
+    }
+    & .container-ourVision{
+        border-top: none;
+        border-bottom: none;
+        &:hover {
+            border: 1px solid gray;
+        }
+    }
+    & .container-ourMission {
+        gap: 5px;
+        & .container-ul-ourMission {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0px;
+            list-style: none;
+            & .title-li-ourMission {
+                color: rgb(97, 96, 96);
+                margin: 5px 0px;
+            }
+            & .text-li-ourMission {
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
 }
