@@ -1,9 +1,14 @@
 {
+  "author": "Mauricio Moitiño <maurimoitii@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/MauriMoiti/Industry-Future-static-page-/issues"
+  },
   "dependencies": {
     "chart.js": "^4.4.0",
     "d": "^1.0.1",
     "jquery": "^3.7.1"
   },
+  "description": "",
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",
@@ -17,11 +22,20 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
+  "homepage": "https://github.com/MauriMoiti/Industry-Future-static-page-#readme",
+  "license": "MIT",
+  "main": "main.js",
+  "name": "industry-future-static-page-",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauriMoiti/Industry-Future-static-page-.git"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build:dev": "webpack --config webpack.config.js --mode development",
     "build:prod": "webpack --config webpack.config.js --mode production",
     "no-open": "webpack --no-open",
-    "server": "./node_modules/.bin/webpack serve --mode production"
-  }
+    "server": "webpack serve --mode production"
+  },
+  "version": "1.0.0"
 }
