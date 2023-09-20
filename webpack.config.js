@@ -1,8 +1,10 @@
     const webpack = require('webpack');
     const path = require('path');
     const HtmlWebpackPlugin = require('html-webpack-plugin');
+    const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
     module.exports = {
+    mode: 'production',
     entry:  './js/main.js',
     output: {
         filename: 'bundle.js',
@@ -21,8 +23,8 @@
             }
         },
         {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
+            test: /\.css$/i,
+            use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
         // {
         //     test: /\.html$/,
@@ -39,6 +41,16 @@
             }
         }
     ]},
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },     
+    devServer: {
+        static: path.join(__dirname, '/'),
+        compress: true,
+        port: 9000,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
@@ -46,6 +58,7 @@
     new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'
-    })
+    }), 
+    new MiniCssExtractPlugin()
     ],
 };

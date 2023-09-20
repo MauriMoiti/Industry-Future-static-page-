@@ -1,4 +1,7 @@
-import './styles.js'
+import '../src/assets/css/main.css';
+import '../src/assets/css/normalize.css';
+import '../src/assets/css/responsive.css';
+import '../src/assets/css/responsive_ipad.css';
 
 import { header} from '../src/components/header/header.js';
 import { footer } from '../src/components/footer/footer.js';

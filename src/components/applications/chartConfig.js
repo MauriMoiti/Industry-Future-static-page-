@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const ctx =  $("#myChart")
+    const ctx =  $("#myChart").getContext('2d');
     
     this.chart = new Chart(ctx, {
         type: 'bar',
