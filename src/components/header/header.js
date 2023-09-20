@@ -1,6 +1,6 @@
 const header = () => {
     $(function () {
-        $("header").load("/src/components/header/header.html").show();
+        $(".container-header").load("../src/components/header/header.html").show();
     });
 };
 
