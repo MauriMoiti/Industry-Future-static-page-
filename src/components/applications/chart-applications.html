@@ -1,9 +1,13 @@
 <script>
+    var chartjs;
     function initializeChart() {
+        if (chartjs) {
+            chartjs.destroy();
+    }
         this.element = document.getElementById('myChart')
         this.context = this.element.getContext("2d");
 
-    new Chart(this.element, {
+        chartjs = new Chart(this.element, {
         type: 'bar',
         data: {
         labels: ['Automotive', 'Food', 'Pharmaceutical', 'Plastics', 'Construction'],
