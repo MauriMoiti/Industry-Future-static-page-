@@ -32,15 +32,14 @@
         // },
         {
             test: /\.(png|jpg|gif|svg)$/,
-            use: {
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                    context: path.resolve(__dirname, 'src')
-                }
+            type: 'asset/resource',
+            generator: {
+                filename: '[path][name].[ext]',
+                context: path.resolve(__dirname, 'src')
             }
-        }
-    ]},
+        },
+    ]}, 
+    
     performance: {
         hints: false,
         maxEntrypointSize: 512000,
@@ -53,7 +52,7 @@
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: 'index.html',
     }), 
     new webpack.ProvidePlugin({
         $: 'jquery',

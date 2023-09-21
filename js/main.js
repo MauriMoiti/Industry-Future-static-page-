@@ -1,3 +1,4 @@
+// main.js
 
 import { header} from '../src/components/header/header.js';
 import { footer } from '../src/components/footer/footer.js';
