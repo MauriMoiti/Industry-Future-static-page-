@@ -15,6 +15,7 @@
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
@@ -35,6 +36,7 @@
     "build": "webpack --config webpack.config.cjs",
     "build:dev": "webpack --config webpack.config.cjs --mode development",
     "build:prod": "webpack --config webpack.config.cjs --mode production",
+    "deploy": "gh-pages -d dist",
     "no-open": "webpack --no-open",
     "server": "webpack serve --mode production"
   },
