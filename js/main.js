@@ -28,16 +28,7 @@ footer();
     const secondMenuItem = $("[data-index='2']"); // about-us 
     const thirdMenuItem = $("[data-index='3']"); // technology
     const fourthMenuItem = $("[data-index='4']"); // sustainability
-    let test = $("[data-index='5']");
 
-    console.log(test);
-    $(test).on("click", () => {
-        console.log('this work')
-    });
-
-    console.log($ + ' this')
-
-    console.log(firstMenuItem)
         $(firstMenuItem).on("click", function(event) {
             event.preventDefault();
             hideContent()
