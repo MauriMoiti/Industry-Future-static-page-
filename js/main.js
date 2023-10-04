@@ -24,14 +24,6 @@ applications();
 footer();
 
 ($(() => {
-    // $(".css-a-link-menu-header").on("click", function(event) {
-    //     // Remueve aria-current de todos los enlaces
-    //     $(".css-a-link-menu-header").removeAttr("aria-current");
-        
-    //     // Establece el enlace clicado como la página actual
-    //     $(this).attr("aria-current", "page");
-    // });
-    
 
     //Handleclick in navbar 
     const firstMenuItem = $("[data-index='1']"); // applications
