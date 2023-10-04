@@ -52,11 +52,7 @@
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
-    }), 
-    new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery'
+            template: './index.html',
     }), 
     new MiniCssExtractPlugin()
     ],

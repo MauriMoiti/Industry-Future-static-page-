@@ -23,7 +23,7 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "homepage": "https://github.com/MauriMoiti/Industry-Future-static-page-#readme",
+  "homepage": "https://maurimoiti.github.io/Industry-Future-static-page-/",
   "license": "MIT",
   "main": "main.js",
   "name": "industry-future-static-page-",
@@ -32,11 +32,12 @@
     "url": "git+https://github.com/MauriMoiti/Industry-Future-static-page-.git"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "build:dev": "webpack --config webpack.config.js --mode development",
-    "build:prod": "webpack --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.config.cjs",
+    "build:dev": "webpack --config webpack.config.cjs --mode development",
+    "build:prod": "webpack --config webpack.config.cjs --mode production",
     "no-open": "webpack --no-open",
     "server": "webpack serve --mode production"
   },
+  "type": "module",
   "version": "1.0.0"
 }

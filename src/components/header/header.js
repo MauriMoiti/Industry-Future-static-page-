@@ -1,8 +1,7 @@
+import $ from 'jquery';
+
 const header = () => {
-    $(function () {
-        $(".container-header").load("../src/components/header/header.html").show();
-    });
+    $(".container-header").load("../src/components/header/header.html").show();
 };
 
-
-export {header};
+export { header };

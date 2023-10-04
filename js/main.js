@@ -1,5 +1,4 @@
-// main.js
-
+import $ from 'jquery';
 import { header} from '../src/components/header/header.js';
 import { footer } from '../src/components/footer/footer.js';
 import { hideContent } from "../src/components/hideContent/hideContent.js"
@@ -13,9 +12,8 @@ header();
 hideContent();
 applications();
 footer();
-console.log('this1')
-$(function () {
-    console.log('this2')
+
+($(() => {
     $(".css-a-link-menu-header").on("click", function(event) {
         // Remueve aria-current de todos los enlaces
         $(".css-a-link-menu-header").removeAttr("aria-current");
@@ -30,15 +28,22 @@ $(function () {
     const secondMenuItem = $("[data-index='2']"); // about-us 
     const thirdMenuItem = $("[data-index='3']"); // technology
     const fourthMenuItem = $("[data-index='4']"); // sustainability
+    let test = $("[data-index='5']");
 
-    console.log('this3')
+    console.log(test);
+    $(test).on("click", () => {
+        console.log('this work')
+    });
+
+    console.log($ + ' this')
+
+    console.log(firstMenuItem)
         $(firstMenuItem).on("click", function(event) {
             event.preventDefault();
             hideContent()
             applications();
         });
         $(secondMenuItem).on("click", function(event) {
-            console.log(true)
             event.preventDefault();
             hideContent();
             aboutUs();
@@ -48,10 +53,9 @@ $(function () {
             hideContent();
             technology();
         });
-        console.log('this4')
         $(fourthMenuItem).on("click", function(event) {
             event.preventDefault();
             hideContent();
             sustainability();  
         });
-})
+    }))
