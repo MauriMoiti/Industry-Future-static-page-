@@ -24,7 +24,7 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "homepage": "https://maurimoiti.github.io/Industry-Future-static-page-/dist",
+  "homepage": "https://maurimoiti.github.io/Industry-Future-static-page-/",
   "license": "MIT",
   "main": "main.js",
   "name": "industry-future-static-page-",

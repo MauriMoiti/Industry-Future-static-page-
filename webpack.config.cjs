@@ -9,6 +9,7 @@
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/Industry-Future-static-page-/dist'
     },
     module: {
         rules: [
