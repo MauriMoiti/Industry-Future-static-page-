@@ -35,22 +35,18 @@ footer();
     const fourthMenuItem = $("[data-index='4']"); // sustainability
 
         $(firstMenuItem).on("click", function(event) {
-            event.preventDefault();
             hideContent()
             applications();
         });
         $(secondMenuItem).on("click", function(event) {
-            event.preventDefault();
             hideContent();
             aboutUs();
         });
         $(thirdMenuItem).on("click", function(event) {
-            event.preventDefault();
             hideContent();
             technology();
         });
         $(fourthMenuItem).on("click", function(event) {
-            event.preventDefault();
             hideContent();
             sustainability();  
         });
