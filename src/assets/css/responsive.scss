@@ -94,15 +94,15 @@
 }
 
 /*header*7 /*nav*/
-& .container-nav-content  {
+.container-nav-content  {
     padding: 10px;
         & .container-ul-nav-header {
             gap: 5px; 
             list-style: none;
             & .css-li-menu-header {
                 padding: 0px 5px;
-                & .css-a-link-menu-header{
-                    font-size: var(--size-md);
+                & .css-button-menu-header{
+                    font-size: var(--size-sm);
                 }
             }
         }
