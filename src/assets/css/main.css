@@ -129,14 +129,14 @@ body {
 .container-ul-nav-header > li {
     padding: 20px;
 }
-.container-ul-nav-header > li a {
-    
-    text-decoration: none;
+.container-ul-nav-header > li button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
     font-size: var(--size-extra-lg);
     color: var(--color-blue_violet);
 }
-.container-ul-nav-header > li a:hover {
-    
+.container-ul-nav-header > li button:hover {
     color: var(--header-hover);
 }
 
