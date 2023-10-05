@@ -1,10 +1,81 @@
+@media screen and (max-width: 640px) {
+:root { 
+--size-sm: 12px;
+--size-md: 14px;
+--size-lg: 16px;
+--size-lg2: 18px;
+}
 .section-applications {
     & .container-info-applications {
         & .container-info {
-            margin: 30px 0;
-            font-size: 18px;
+            font-size: var(--size-sm);
             line-height: 27px;
-            word-wrap: break-word;
+            word-break: break-all;
+            padding: 0px 18px;
+            margin: 20px 0px 10px 0px;
+        }
+        & .container-chart-applications {
+            display: none;
         }
     }
+    & .container-all-applications { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .container-applications {
+            padding: 5px;
+            font-size: var(--size-sm);
+            & .application-img {
+                width: 150px;
+                height: 125px;
+            }
+        }
+        & .container-automotive {
+            & div {
+                max-width: 300px;
+                height: 100%;
+                gap: 12px;
+                padding: 10px;
+            }
+        }
+        & .container-food {
+            & div {
+                max-width: 300px;
+                height: 100%;
+                gap: 12px;
+                padding: 10px;
+            }
+        }
+        & .container-pharmaceutical {
+            & div {
+                max-width: 300px;
+                height: 100%;
+                gap: 12px;
+                padding: 10px;
+                background-color: #c6d4e1;
+            }
+        }
+        & .container-plastics{
+            & div {
+                max-width: 300px;
+                height: 100%;
+                gap: 12px;
+                padding: 10px;
+                background-color: #9dc1e2;
+            }
+        }
+        & .container-construction{
+            & div {
+                width: 100%;
+                max-width: 300px;
+                height: 100%;
+                gap: 12px;
+                padding: 10px;
+                background-color: #c6d4e1;
+            }
+        }
+    }
+}
+
 }

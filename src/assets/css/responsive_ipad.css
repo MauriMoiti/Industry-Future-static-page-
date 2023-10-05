@@ -1,6 +1,5 @@
 @media screen and (min-width: 640px) and (max-width: 1100px) {
 
-
 :root {
 
     --color-blue_violet: #142EAE;
@@ -24,7 +23,6 @@
     }
 
 /*Header*/ /*title*/
-
 .css-img-arm_robot-title {
     width: 30px;
     height: 40px;

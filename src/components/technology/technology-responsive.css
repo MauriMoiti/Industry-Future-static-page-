@@ -1,0 +1,30 @@
+@media screen and (max-width: 640px) {
+    :root { 
+        --size-sm: 12px;
+        --size-md: 14px;
+        --size-lg: 16px;
+        --size-lg2: 18px;
+        }
+        .section-technology {
+            width: 70%;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0px;
+            font-size: var(--size-sm);
+            & .container-info-technology { 
+                width: auto;
+                height: auto;
+                min-height: auto;
+                max-height: auto;
+                padding: 10px 0px 0px 0px;
+                gap: 15px;
+                & .title-technology {
+                    font-size: var(--size-lg);
+                }
+                & .img-technology {
+                    width: 150px;
+                    height: 125px;
+                }
+            }
+        }
+    }
