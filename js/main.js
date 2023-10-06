@@ -40,19 +40,19 @@ footer();
         location.reload(true);  
     }
     
-        $(firstMenuItem).on("click", function() {
+        $("body").on("click", "[data-index='1']", function() {
             hideContent()
             applications();
         });
-        $(secondMenuItem).on("click", function() {
+        $("body").on("click", "[data-index='2']", function() {
             hideContent();
             aboutUs();
         });
-        $(thirdMenuItem).on("click", function() {
+        $("body").on("click", "[data-index='3']", function() {
             hideContent();
             technology();
         });
-        $(fourthMenuItem).on("click", function() {
+        $("body").on("click","[data-index='4']", function() {
             hideContent();
             sustainability();  
         });
