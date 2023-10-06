@@ -33,20 +33,26 @@ footer();
     const secondMenuItem = $("[data-index='2']"); // about-us 
     const thirdMenuItem = $("[data-index='3']"); // technology
     const fourthMenuItem = $("[data-index='4']"); // sustainability
+    console.log($("[data-index='1']").length);  
+    console.log($("[data-index='2']").length);  
 
-        $(firstMenuItem).on("click", function(event) {
+    if ($("[data-index='1']").length === 0) {
+        location.reload(true);  
+    }
+    
+        $(firstMenuItem).on("click", function() {
             hideContent()
             applications();
         });
-        $(secondMenuItem).on("click", function(event) {
+        $(secondMenuItem).on("click", function() {
             hideContent();
             aboutUs();
         });
-        $(thirdMenuItem).on("click", function(event) {
+        $(thirdMenuItem).on("click", function() {
             hideContent();
             technology();
         });
-        $(fourthMenuItem).on("click", function(event) {
+        $(fourthMenuItem).on("click", function() {
             hideContent();
             sustainability();  
         });
