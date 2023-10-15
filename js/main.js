@@ -29,16 +29,6 @@ footer();
 ($(() => {
 
     //Handleclick in navbar 
-    const firstMenuItem = $("[data-index='1']"); // applications
-    const secondMenuItem = $("[data-index='2']"); // about-us 
-    const thirdMenuItem = $("[data-index='3']"); // technology
-    const fourthMenuItem = $("[data-index='4']"); // sustainability
-    console.log($("[data-index='1']").length);  
-    console.log($("[data-index='2']").length);  
-
-    if ($("[data-index='1']").length === 0) {
-        location.reload(true);  
-    }
     
         $("body").on("click", "[data-index='1']", function() {
             hideContent()
