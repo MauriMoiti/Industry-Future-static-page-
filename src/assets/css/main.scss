@@ -6,7 +6,7 @@ body {
 :root {
 --color-blue_violet: #142EAE;
 --color-violet_smooth: #425EE7;
---color-gray_medium: #5E637A; 
+--color-gray_medium: #222121e3; 
 --color-gray_smooth: #9CA2BE;
 --color-gray_form: #6F6B6B;
 --color-gray_form2: #B4B0B0; 
@@ -84,20 +84,14 @@ body {
 .css-p-login-button:hover {
     color: var(--color-blue_violet);
 }
-.css-form-search {
-    margin: 0px 8px 0px 8px;  
-}
-.css-input-image-search {
-    width: 13px;
-    height: 13px;   
-}
+
 #css-button-select_country {
     cursor: pointer;
     height: auto;
     width: auto;
     padding: 3px;
     border: 1px solid;
-    color: var(--color-gray_smooth);
+    color: var(--color-gray_medium);
     background-color: white;
     border-radius: 8px;
     margin-right: 10px;
@@ -232,10 +226,26 @@ body {
 .container-ul-footer {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0px;
     margin: 0px;
     list-style: none;
+}
+.map-ul-footer {
+    padding: 0px;
+    list-style: none;
+}
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 36px;
 }
 .container-map-footer {
     margin: 10px 0px 10px 10px;
