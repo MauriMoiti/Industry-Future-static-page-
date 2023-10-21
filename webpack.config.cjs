@@ -32,7 +32,7 @@
         //     use: 'html-loader'
         // },
         {
-            test: /\.(png|jpg|gif|svg)$/,
+            test: /\.(png|jpg|WebP|AVIF|gif|svg)$/,
             type: 'asset/resource',
             generator: {
                 filename: 'images/[path][name].[contenthash][ext]',
