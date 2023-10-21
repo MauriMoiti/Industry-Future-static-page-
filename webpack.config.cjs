@@ -9,6 +9,7 @@
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true
     },
     module: {
         rules: [
@@ -34,7 +35,7 @@
             test: /\.(png|jpg|gif|svg)$/,
             type: 'asset/resource',
             generator: {
-                filename: '[path][name].[ext]',
+                filename: 'images/[path][name].[contenthash][ext]',
                 context: path.resolve(__dirname, 'src')
             }
         },
@@ -54,6 +55,8 @@
         new HtmlWebpackPlugin({
             template: './index.html',
     }), 
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+        filename: 'css/[name].[contenthash].css'  // para CSS
+    })
     ],
 };
