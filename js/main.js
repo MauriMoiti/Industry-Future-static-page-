@@ -11,7 +11,7 @@ import '../src/components/technology/technology-responsive.scss';
 import '../src/components/about-us/about-us.scss';
 import '../src/components/about-us/aboutUs-responsive.scss';
 
-import 'jquery';
+import 'jquery'
 import { header} from '../src/components/header/header.js';
 import { footer } from '../src/components/footer/footer.js';
 import { hideContent } from "../src/components/hideContent/hideContent.js"

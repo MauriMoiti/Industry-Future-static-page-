@@ -9,6 +9,7 @@ export function footerButtonContactMe() {
         aboutUs();
         setTimeout(() => {
             const formContactMe = $(".container-form-contact");
+            // offset() returns an object that contains the positions 'top' and 'left' of the element's scroll.  
             const formContactMePosition = formContactMe.offset();
             $("html, body").animate({
                 scrollTop: formContactMePosition.top

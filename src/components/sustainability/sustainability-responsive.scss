@@ -32,5 +32,24 @@
                 }
             }
         }
-
     }
+@media screen and (min-width: 640px) and (max-width: 1100px) { 
+    .section-sustainability {
+        & .container-info-sustainability { 
+            max-height: 100%;
+            gap: 30px;
+            & .title-sustainability {
+                padding: 20px 0px;
+                font-size: 35px;
+            }
+            & .container-img-sustainability {
+                & .img-sustainability {
+                    width: 36%;
+                }
+            }
+        }
+        & .text-sustainability {
+            padding-bottom: 20px;
+        }
+    }
+}

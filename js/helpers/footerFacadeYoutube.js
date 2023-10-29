@@ -4,6 +4,8 @@ export function footerFacadeYoutube() {
         var videoId = $this.data('video-id');
         var iframeSrc = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
 
+        $this.addClass('css-img-youtube-facade')
+
         // img hidden 
         $this.find('.youtube-thumbnail').hide();
 
